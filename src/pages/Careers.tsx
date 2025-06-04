@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Users, Heart, TrendingUp, Award, Mail, Send, Star } from "lucide-react";
+import { Users, Heart, TrendingUp, Award, Star, Mail } from "lucide-react";
 
 export default function Careers() {
   return (
@@ -215,15 +214,15 @@ export default function Careers() {
           Don't see the perfect role? We're always looking for talented individuals to join our team.
           Send us your CV and let's discuss how you can contribute to our mission.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="flex items-center gap-2">
-            <Send className="h-5 w-5" />
-            Send Your CV
-          </Button>
-          <Button size="lg" variant="outline" className="flex items-center gap-2">
-            <Mail className="h-5 w-5" />
-            Email: careers@pfsg.co.nz
-          </Button>
+        <div className="flex justify-center items-center gap-2 text-lg">
+          <Mail className="h-5 w-5 text-yellow-500" />
+          <span className="font-medium">Email: </span>
+          <a
+            href="mailto:info@pfsg.co.nz"
+            className="text-yellow-600 hover:text-yellow-700 underline font-medium"
+          >
+            info@pfsg.co.nz
+          </a>
         </div>
       </div>
     </div>
